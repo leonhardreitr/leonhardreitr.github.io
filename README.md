@@ -1,2 +1,2 @@
 # leonhardreitr.github.io
-stuff for my website:) test
+stuff for my website:)
