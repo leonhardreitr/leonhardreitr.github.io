@@ -2,16 +2,16 @@
   {
     "objectID": "index.html",
     "href": "index.html",
-    "title": "Home",
+    "title": "Hello :)",
     "section": "",
-    "text": "Hello :)!\nWelcome to my Quarto Website."
+    "text": "Welcome to my Quarto Website."
   },
   {
     "objectID": "about.html",
     "href": "about.html",
     "title": "About me",
     "section": "",
-    "text": "My name is Leonhard Reiter. I am Master Student in (Economic) Psychology and a Student Assistant in Robert Böhm’s Team. There I help with conducting research, such as creating survey and analysing data. I did an Internship at Susann Fiedlers Group where I preprared a Bachelor course on Publication Bias detection methods such as p/z-curves regarding managment research.\nHowever I am also doing research myself. I am primarly interested in AI-Human interaction, it’s perception and general attitudes towards novel technologies. Furthermore I am also interested in more meta-sciency topics such as p-mining, publication bias and how to help to improve science.\nMy work is strongly quantitative and I love doing and reading about statistics. Check my Github to see what I am currently working through. Currently I am head-over-toes into Bayesian barbarism, participating in the 2024 edition of Richard McElreath’s “Statistical Rethinking”-Course. More broadly I am also intrested in Meta-Analysis, Machine Learning and text as data. I strongly advocate open-science and especialy reproducible workflows. Check out my OSF to see more.\nIf you would like to talk about statistics, science in general or to collaborate on a project, feel free to reach out to me via mail"
+    "text": "My name is Leonhard Reiter. I am Master Student in (Economic) Psychology and a Student Assistant in Robert Böhm’s Team. There I help with conducting research, such as creating survey and analysing data. I did an Internship at Susann Fiedlers Group where I preprared a Bachelor course on Publication Bias detection methods such as p/z-curves regarding managment research.\nHowever I am also doing research myself. I am primarly interested in AI-Human interaction, it’s perception and general attitudes towards novel technologies. Furthermore I am also interested in more meta-sciency topics such as p-mining, publication bias and how to help to improve science.\nMy work is strongly quantitative and I love doing and reading about statistics. Check my Github to see what I am currently working through. Lately I have been head-over-toes into Bayesian barbarism, participating in the 2024 edition of Richard McElreath’s “Statistical Rethinking”-Course. More broadly I am also interested in Meta-Analysis, Machine Learning and text as data. I strongly advocate open-science and especialy reproducible workflows. Check out my OSF to see more.\nIf you would like to talk about statistics, science in general or to collaborate on a project, feel free to reach out to me via mail"
   },
   {
     "objectID": "cv.html",
