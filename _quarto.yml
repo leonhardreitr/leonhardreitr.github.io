@@ -3,12 +3,23 @@ project:
 
 website:
   title: "Reiter on the storm"
+  reader-mode: true
+  image: img.jpeg
   navbar:
     tools:
+    right:
       - icon: twitter
         href: https://twitter.com/leonhard_reiter
       - icon: github
         href: https://github.com/leonhardreitr
+      - icon: envelope
+        href: "mailto:leonhard.reiter@univie.ac.at"
+      - icon: box-fill
+        text: OSF
+        href: https://osf.io/profile/
+      - icon: linkedin
+        href: https://www.linkedin.com/in/leonhard-reiter-a93470229/
+  
     left:
       - href: index.qmd
         text: Home

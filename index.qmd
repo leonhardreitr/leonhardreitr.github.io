@@ -1,7 +1,8 @@
 ---
-title: "Home"
+title: "Hello :)"
+image: img.jpg
+about:
+  template: jolla
 ---
-
-Hello :)!
 
 Welcome to my Quarto Website.
