@@ -1,12 +1,5 @@
 ---
-title: "leonhardreitr.github.io"
+title: "Reiter on the storm"
 ---
 
-This is a Quarto website.
-
-To learn more about Quarto websites visit <https://quarto.org/docs/websites>.
-
-```{r}
-1 + 1
-```
- 
+Hello :)! Welcome to my Quarto Website. My name is Leonhard Reiter. I am Master Student in (Economic) Psychology and a Student Assistant in Robert Böhm's [Team](https://social-econ-psych.univie.ac.at/team/){style="darkblue;"}
