@@ -3,7 +3,6 @@ project:
 
 website:
   title: "Reiter on the storm"
-  reader-mode: true
   image: img.jpeg
   navbar:
     tools:
@@ -28,8 +27,9 @@ website:
 
 format:
   html:
-    theme: cosmo
-    css: styles.css
-    toc: true
+    theme:
+      light: cosmo
+      dark: [cosmo, theme-dark.scss]
+   # css: styles.css
 
 
