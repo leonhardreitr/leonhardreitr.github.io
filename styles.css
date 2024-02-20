@@ -1,1 +1,67 @@
 /* css styles */
+/* Custom Theme for Quarto Website with Cosmo Bootstrap Theme */
+
+:root {
+    --primary-color: #9ec5c6; /* Deep blue for a strong presence */
+    --secondary-color: #9ec5c6; /* Soft teal for modernity and complement */
+    --background-color: ##e2e2e2; /* Very light gray for a clean background */
+    --text-color: #0c0c0c; /* Darker gray for better readability */
+    --heading-color: #a85c02; /* Darker version of primary color for headings */
+    --link-hover-color: black; /* Brighter shade of primary for hover */
+}
+
+body {
+    background-color: var(--background-color);
+    color: var(--text-color);
+    font-family: 'Open Sans', sans-serif; /* A clean and readable font */
+}
+
+a {
+    color: var(--primary-color);
+    transition: color 0.2s ease-in-out; /* Smooth transition for link hover effect */
+}
+
+a:hover {
+    color: var(--link-hover-color);
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: var(--heading-color);
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+/* Custom styles for navigation bar */
+.navbar {
+    background-color: var(--primary-color);
+    border-bottom: 3px solid var(--secondary-color);
+}
+
+.nav-link {
+    color: white !important; /* Ensures nav links are easily visible */
+}
+
+.nav-link:hover {
+    background-color: var(--secondary-color) !important;
+}
+
+/* Style adjustments for footer */
+footer {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+/* Enhancements for buttons */
+.btn-primary {
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+}
+
+.btn-primary:hover {
+    background-color: var(--link-hover-color);
+    border-color: var(--link-hover-color);
+}
+
+/* Additional customizations can be added below as needed */
