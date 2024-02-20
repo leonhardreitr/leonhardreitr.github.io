@@ -1,5 +1,7 @@
 ---
-title: "Reiter on the storm"
+title: "Home"
 ---
 
-Hello :)! Welcome to my Quarto Website. My name is Leonhard Reiter. I am Master Student in (Economic) Psychology and a Student Assistant in Robert Böhm's [Team](https://social-econ-psych.univie.ac.at/team/){style="darkblue;"}
+Hello :)!
+
+Welcome to my Quarto Website.
