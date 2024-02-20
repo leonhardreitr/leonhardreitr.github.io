@@ -5,12 +5,13 @@ editor:
     wrap: 72
 ---
 
-My name is Leonhard Reiter. I am Master Student in (Economic) Psychology
-and a Student Assistant in Robert Böhm's Team. There I help with
-conducting research, such as creating survey and analysing data. I did
-an Internship at Susann Fiedlers Group where I preprared a Bachelor
-course on Publication Bias detection methods such as p/z-curves
-regarding managment research.
+My name is Leonhard Reiter, but most people just call me Lenni (with an
+"i", not an "y"). I am a Master Student in (Economic) Psychology at the
+university of Vienna and a student assistant in Robert Böhm's Team.
+There I help with conducting research, such as creating surveys and
+analysing data. I did an internship at Susann Fiedlers Group at the WU
+Vienna where I prepared a Bachelor course on Publication Bias detection
+methods such as p/z-curves regarding management research.
 
 However I am also doing research myself. I am primarly interested in
 AI-Human interaction, it's perception and general attitudes towards
