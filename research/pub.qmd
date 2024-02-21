@@ -1,0 +1,23 @@
+---
+title: "Publications"
+listing:
+  - id: journal-article
+    contents: journal_articles.yaml
+    template: papers.ejs
+    filter-ui: false
+    sort: "date desc"
+    sort-ui: false
+toc: true
+date-format: "D MMM YYYY"
+---
+
+## Journal article
+
+::: {#journal-article}
+:::
+
+
+## Work in progress
+
+::: {#in-progress}
+:::
