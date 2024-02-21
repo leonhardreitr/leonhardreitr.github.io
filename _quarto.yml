@@ -3,7 +3,7 @@ project:
 
 website:
   title: "Reiter on the storm"
-  image: img.jpeg
+  image: img2.jpeg
   navbar:
     tools:
     right:
@@ -30,6 +30,7 @@ format:
     theme:
       light: cosmo
       dark: [cosmo, theme-dark.scss]
+    mainfont: Nunito
    # css: styles.css
 
 
