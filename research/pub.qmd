@@ -11,7 +11,7 @@ toc: true
 date-format: "D MMM YYYY"
 ---
 
-## Journal article
+## Journal articles
 
 ::: {#journal-article}
 :::
@@ -22,3 +22,4 @@ date-format: "D MMM YYYY"
 ::: {#in-progress}
 I am currently working on a meta-analysis on a topic related to vaccination intention. My first article as first author is also currently under review. The topic is broadly use cases of generative AI in education.
 :::
+
