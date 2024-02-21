@@ -23,7 +23,8 @@ website:
       - href: index.qmd
         text: Home
       - about.qmd
-      - cv.qmd
+      - href: cv.qmd
+        text: My CV
       - href: research/pub.qmd
         text: Publications
 
