@@ -1,5 +1,5 @@
 ---
-title: "Hello :)"
+title: <p class="orange-text">Hello :)</p>
 image: img.jpg
 about:
   template: jolla

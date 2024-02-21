@@ -24,6 +24,8 @@ website:
         text: Home
       - about.qmd
       - cv.qmd
+      - href: research/pub.qmd
+        text: Publications
 
 format:
   html:
