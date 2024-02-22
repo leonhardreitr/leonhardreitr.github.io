@@ -3,6 +3,7 @@ title: <p class="orange-text">Hello :)</p>
 image: img.jpg
 about:
   template: jolla
+  image-width: 30em
 ---
 
 Welcome to my Quarto Website.
