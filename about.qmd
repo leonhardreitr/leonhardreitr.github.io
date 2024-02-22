@@ -5,8 +5,7 @@ editor:
     wrap: 72
 ---
 
-My name is Leonhard Reiter, but most people just call me Lenni (with an
-"i", not an "y"). I am a Master Student in (Economic) Psychology at the
+My name is Leonhard Reiter, but most people just call me Lenni^[With an "i" not a "y"]. I am a Master Student in (Economic) Psychology at the
 university of Vienna and a student assistant in Robert Böhm's Team.
 There I help with conducting research, such as creating surveys and
 analysing data. I did an internship at Susann Fiedler's group at the WU
