@@ -13,11 +13,14 @@ website:
         href: https://github.com/leonhardreitr
       - icon: envelope
         href: "mailto:leonhard.reiter@univie.ac.at"
-      - icon: box-fill
-        text: OSF
+      - text: "{{< iconify academicons osf-square >}}"
         href: https://osf.io/profile/
       - icon: linkedin
         href: https://www.linkedin.com/in/leonhard-reiter-a93470229/
+      - text: "{{< iconify fa6-brands orcid >}}"
+        href: https://orcid.org/0000-0002-2400-7907
+      - text: "{{< iconify fa6-brands google-scholar >}}"
+        href: https://scholar.google.com/citations?user=nibOPBsAAAAJ&hl=en
   
     left:
       - href: index.qmd

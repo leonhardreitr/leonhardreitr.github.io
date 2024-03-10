@@ -6,4 +6,4 @@ about:
   image-width: 30em
 ---
 
-Welcome to my Quarto Website.
+Welcome to my Website
