@@ -5,8 +5,31 @@ $body-color: #d74ea2ff;
 $link-color: #75AADB;
 $navbar-bg: #1D6001;
 
+// font
+$font-family-base: 'Poppins', sans-serif; // Updated to Poppins
+
 // Code blocks
 $code-block-bg-alpha: -.8;
 
 // Import fonts
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;800&display=swap');
+// Extended styles
+// Typography
+$heading-color: #1D6001; // Color for headings
+$paragraph-spacing: 1.2em; // Spacing between paragraphs
+
+// Buttons
+$button-bg: #f2a900; // Button background color
+$button-color: #ffffff; // Button text color
+$button-border-radius: 4px; // Button border radius
+
+// Navigation Bar
+$navbar-height: 50px; // Navigation bar height
+$navbar-link-color: #ffffff; // Navigation link color
+$navbar-link-hover-color: #f2a900; // Navigation link hover color
+
+// Footer
+$footer-bg: #333333; // Footer background color
+$footer-color: #ffffff; // Footer text color
+
+//

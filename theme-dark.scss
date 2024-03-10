@@ -10,3 +10,25 @@ $code-block-bg-alpha: -.8;
 
 // Import fonts
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;800&display=swap');
+
+// Extended styles
+// Typography
+$heading-color: #ffffff; // Color for headings
+$paragraph-spacing: 1.5em; // Spacing between paragraphs
+$font-family-base: 'Nunito', sans-serif; // Base font family
+
+// Buttons
+$button-bg: #4D90FE; // Button background color
+$button-color: #ffffff; // Button text color
+$button-border-radius: 5px; // Button border radius
+
+// Navigation Bar
+$navbar-height: 60px; // Navigation bar height
+$navbar-link-color: #ffffff; // Navigation link color
+$navbar-link-hover-color: $link-color; // Navigation link hover color
+
+// Footer
+$footer-bg: #2C3E50; // Footer background color
+$footer-color: #ffffff; // Footer text color
+
+// Add additional custom styles below
