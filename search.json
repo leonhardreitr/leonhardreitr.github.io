@@ -1,5 +1,19 @@
 [
   {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About me",
+    "section": "",
+    "text": "My name is Leonhard Reiter, but most people just call me Lenni1. I am a Master Student in (Economic) Psychology at the university of Vienna and a student assistant in Robert Böhm’s Team. There I help with conducting research, such as creating surveys and analysing data. I did an internship at Susann Fiedler’s group at the WU Vienna where I prepared a Bachelor course on Publication Bias detection methods such as p/z-curves regarding management research.\nHowever I am also doing research myself. I am primarily interested in AI-Human interaction, it’s perception and general attitudes towards novel technologies. Furthermore I am also interested in more meta-sciency topics such as p-mining, publication bias and how to help to improve science.\nMy work is strongly quantitative and I love doing and reading about statistics. Check my Github to see what I am currently working through. Lately I have been head-over-toes into Bayesian barbarism, participating in the 2024 edition of Richard McElreath’s “Statistical Rethinking”-Course. More broadly I am also interested in Meta-Analysis, Machine Learning and text as data. I strongly advocate open-science and especially reproducible workflows. Check out my OSF to see more.\nBeside science I am a avid martial artist and hold a purple belt in Brazilian Jiu-Jitsu.\nIf you would like to talk about statistics, science in general or to collaborate on a project, feel free to reach out to me via mail."
+  },
+  {
+    "objectID": "about.html#footnotes",
+    "href": "about.html#footnotes",
+    "title": "About me",
+    "section": "Footnotes",
+    "text": "Footnotes\n\n\nWith an “i” not a “y”↩︎"
+  },
+  {
     "objectID": "research/pub.html",
     "href": "research/pub.html",
     "title": "Publications",
@@ -26,20 +40,6 @@
     "title": "Curriculum vitae",
     "section": "",
     "text": "Download current CV"
-  },
-  {
-    "objectID": "about.html",
-    "href": "about.html",
-    "title": "About me",
-    "section": "",
-    "text": "My name is Leonhard Reiter, but most people just call me Lenni1. I am a Master Student in (Economic) Psychology at the university of Vienna and a student assistant in Robert Böhm’s Team. There I help with conducting research, such as creating surveys and analysing data. I did an internship at Susann Fiedler’s group at the WU Vienna where I prepared a Bachelor course on Publication Bias detection methods such as p/z-curves regarding management research.\nHowever I am also doing research myself. I am primarily interested in AI-Human interaction, it’s perception and general attitudes towards novel technologies. Furthermore I am also interested in more meta-sciency topics such as p-mining, publication bias and how to help to improve science.\nMy work is strongly quantitative and I love doing and reading about statistics. Check my Github to see what I am currently working through. Lately I have been head-over-toes into Bayesian barbarism, participating in the 2024 edition of Richard McElreath’s “Statistical Rethinking”-Course. More broadly I am also interested in Meta-Analysis, Machine Learning and text as data. I strongly advocate open-science and especially reproducible workflows. Check out my OSF to see more.\nBeside science I am a avid martial artist and hold a purple belt in Brazilian Jiu-Jitsu.\nIf you would like to talk about statistics, science in general or to collaborate on a project, feel free to reach out to me via mail."
-  },
-  {
-    "objectID": "about.html#footnotes",
-    "href": "about.html#footnotes",
-    "title": "About me",
-    "section": "Footnotes",
-    "text": "Footnotes\n\n\nWith an “i” not a “y”↩︎"
   },
   {
     "objectID": "index.html",
