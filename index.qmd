@@ -3,7 +3,7 @@ title: <p class="orange-text">Hello :)</p>
 image: img.jpg
 about:
   template: jolla
-  image-width: 30em
+  image-width: 20em
 ---
 
 Welcome to my Website 🤓
