@@ -2,5 +2,9 @@
   {
     "listing": "/research/pub.html",
     "items": []
+  },
+  {
+    "listing": "/posts.html",
+    "items": []
   }
 ]
