@@ -30,6 +30,7 @@ website:
         text: My CV
       - href: research/pub.qmd
         text: Publications
+      - posts.qmd
 
 format:
   html:

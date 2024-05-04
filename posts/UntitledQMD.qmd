@@ -1,0 +1,34 @@
+---
+title: "Test post"
+description: "Just a little test"
+author:
+  - name: Leonhard Reiter
+    url: https://leonhardreitr.github.io
+    orcid: 0000-0002-2400-7907
+    affiliation: Department of Occupational, Economic, and Social Psychology, Faculty of Psychology, University of Vienna
+    affiliation-url: https://social-econ-psych.univie.ac.at
+date: 04-05-2024
+categories: [Quarto, R] # self-defined categories
+#citation: 
+ # url: https://samanthacsik.github.io/posts/2022-10-24-my-blog-post/ 
+#image: preview-image.png
+draft: TRUE # setting this to `true` will prevent your post from appearing on your listing page until you're ready!
+---
+
+Hi
+
+```{r}
+## Show the different plot types
+x <- 0:12
+y <- sin(pi/5 * x)
+op <- par(mfrow = c(3,3), mar = .1+ c(2,2,3,1))
+for (tp in c("p","l","b",  "c","o","h",  "s","S","n")) {
+   plot(y ~ x, type = tp, main = paste0("plot(*, type = \"", tp, "\")"))
+   if(tp == "S") {
+      lines(x, y, type = "s", col = "red", lty = 2)
+      mtext("lines(*, type = \"s\", ...)", col = "red", cex = 0.8)
+   }
+}
+par(op)
+```
+

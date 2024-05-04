@@ -1,0 +1,17 @@
+{
+  "hash": "ea498c4503a71a95715cb51e19fa7327",
+  "result": {
+    "engine": "knitr",
+    "markdown": "---\ntitle: \"Test post\"\ndescription: \"Just a little test\"\nauthor:\n  - name: Leonhard Reiter\n    url: https://leonhardreitr.github.io\n    orcid: 0000-0002-2400-7907\n    affiliation: Department of Occupational, Economic, and Social Psychology, Faculty of Psychology, University of Vienna\n    affiliation-url: https://social-econ-psych.univie.ac.at\ndate: 04-05-2024\ncategories: [Quarto, R] # self-defined categories\n#citation: \n # url: https://samanthacsik.github.io/posts/2022-10-24-my-blog-post/ \n#image: preview-image.png\ndraft: TRUE # setting this to `true` will prevent your post from appearing on your listing page until you're ready!\n---\n\n\nHi\n\n\n::: {.cell}\n\n```{.r .cell-code}\n## Show the different plot types\nx <- 0:12\ny <- sin(pi/5 * x)\nop <- par(mfrow = c(3,3), mar = .1+ c(2,2,3,1))\nfor (tp in c(\"p\",\"l\",\"b\",  \"c\",\"o\",\"h\",  \"s\",\"S\",\"n\")) {\n   plot(y ~ x, type = tp, main = paste0(\"plot(*, type = \\\"\", tp, \"\\\")\"))\n   if(tp == \"S\") {\n      lines(x, y, type = \"s\", col = \"red\", lty = 2)\n      mtext(\"lines(*, type = \\\"s\\\", ...)\", col = \"red\", cex = 0.8)\n   }\n}\n```\n\n::: {.cell-output-display}\n![](UntitledQMD_files/figure-html/unnamed-chunk-1-1.png){width=672}\n:::\n\n```{.r .cell-code}\npar(op)\n```\n:::\n",
+    "supporting": [
+      "UntitledQMD_files"
+    ],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}
