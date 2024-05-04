@@ -1,21 +1,43 @@
 /*-- scss:defaults --*/
+// Import fonts
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;800&display=swap');
+
+// Colors
+$nicewhite: #fdf6faff;
+$pink: #d74ea2ff; // Ensure this is the color used for headings
+$black: #000;
+$blue: #75AADB;
+$green: #1D6001;
+$dark-green: #858E79;
+$light-green: #D1D9CE;
+$cream: #FDFBF7;
+$gray: #64605f;
+$purple: #9158A2;
+$orange: #ad7237;
+
 // Base document colors
-$body-bg: #fdf6faff;
-$body-color: #d74ea2ff;
-$link-color: #75AADB;
-$navbar-bg: #1D6001;
+$navbar-bg: $green; // navbar
+$navbar-fg: $nicewhite; // navbar foreground elements
+$navbar-hl: $cream; // highlight color when hovering over navbar links
+$body-bg: $nicewhite; // page background 
+$body-color: $black; // page text 
+$footer-bg: $cream; // footer 
+$link-color: $blue; // hyperlinks 
+
+
+
+// Inline code
+$code-bg: $nicewhite; // inline code background color
+$code-color: $purple; // inline code text color
+
+// Code blocks
+$code-block-bg: $nicewhite; // code block background color
 
 // font
 $font-family-base: 'Poppins', sans-serif; // Updated to Poppins
 
-// Code blocks
-$code-block-bg-alpha: -.8;
-
-// Import fonts
-@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;800&display=swap');
 // Extended styles
 // Typography
-$heading-color: #1D6001; // Color for headings
 $paragraph-spacing: 1.2em; // Spacing between paragraphs
 
 // Buttons
@@ -32,4 +54,8 @@ $navbar-link-hover-color: #f2a900; // Navigation link hover color
 $footer-bg: #333333; // Footer background color
 $footer-color: #ffffff; // Footer text color
 
-//
+/*-- scss:rules --*/
+
+h1, h2, h3 {
+  color: $pink;
+}

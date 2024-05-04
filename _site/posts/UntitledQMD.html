@@ -7,10 +7,10 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 <meta name="author" content="Leonhard Reiter">
-<meta name="dcterms.date" content="2024-04-05">
-<meta name="description" content="Just a little test">
+<meta name="dcterms.date" content="2024-05-04">
+<meta name="description" content="Power-enhanced Funnel plots are awesome, use them!">
 
-<title>Reiter on the storm - Test post</title>
+<title>Reiter on the storm - Sending Funnel Plots into the Sunset?</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -193,15 +193,18 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <header id="title-block-header" class="quarto-title-block default page-columns page-full">
   <div class="quarto-title-banner page-columns page-full">
     <div class="quarto-title column-body">
-      <h1 class="title">Test post</h1>
+      <h1 class="title">Sending Funnel Plots into the Sunset?</h1>
                   <div>
         <div class="description">
-          Just a little test
+          Power-enhanced Funnel plots are awesome, use them!
         </div>
       </div>
                           <div class="quarto-categories">
                 <div class="quarto-category">Quarto</div>
                 <div class="quarto-category">R</div>
+                <div class="quarto-category">Meta-Analysis</div>
+                <div class="quarto-category">Funnel Plots</div>
+                <div class="quarto-category">DataViz</div>
               </div>
                   </div>
   </div>
@@ -228,7 +231,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       <div>
       <div class="quarto-title-meta-heading">Published</div>
       <div class="quarto-title-meta-contents">
-        <p class="date">April 5, 2024</p>
+        <p class="date">May 4, 2024</p>
       </div>
     </div>
     
@@ -247,30 +250,33 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 
 
-<p>Hi</p>
-<div class="cell">
-<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="do">## Show the different plot types</span></span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>x <span class="ot">&lt;-</span> <span class="dv">0</span><span class="sc">:</span><span class="dv">12</span></span>
-<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>y <span class="ot">&lt;-</span> <span class="fu">sin</span>(pi<span class="sc">/</span><span class="dv">5</span> <span class="sc">*</span> x)</span>
-<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>op <span class="ot">&lt;-</span> <span class="fu">par</span>(<span class="at">mfrow =</span> <span class="fu">c</span>(<span class="dv">3</span>,<span class="dv">3</span>), <span class="at">mar =</span> .<span class="dv">1</span><span class="sc">+</span> <span class="fu">c</span>(<span class="dv">2</span>,<span class="dv">2</span>,<span class="dv">3</span>,<span class="dv">1</span>))</span>
-<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> (tp <span class="cf">in</span> <span class="fu">c</span>(<span class="st">"p"</span>,<span class="st">"l"</span>,<span class="st">"b"</span>,  <span class="st">"c"</span>,<span class="st">"o"</span>,<span class="st">"h"</span>,  <span class="st">"s"</span>,<span class="st">"S"</span>,<span class="st">"n"</span>)) {</span>
-<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a>   <span class="fu">plot</span>(y <span class="sc">~</span> x, <span class="at">type =</span> tp, <span class="at">main =</span> <span class="fu">paste0</span>(<span class="st">"plot(*, type = </span><span class="sc">\"</span><span class="st">"</span>, tp, <span class="st">"</span><span class="sc">\"</span><span class="st">)"</span>))</span>
-<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a>   <span class="cf">if</span>(tp <span class="sc">==</span> <span class="st">"S"</span>) {</span>
-<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a>      <span class="fu">lines</span>(x, y, <span class="at">type =</span> <span class="st">"s"</span>, <span class="at">col =</span> <span class="st">"red"</span>, <span class="at">lty =</span> <span class="dv">2</span>)</span>
-<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a>      <span class="fu">mtext</span>(<span class="st">"lines(*, type = </span><span class="sc">\"</span><span class="st">s</span><span class="sc">\"</span><span class="st">, ...)"</span>, <span class="at">col =</span> <span class="st">"red"</span>, <span class="at">cex =</span> <span class="fl">0.8</span>)</span>
-<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a>   }</span>
-<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a>}</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output-display">
-<div>
-<figure class="figure">
-<p><img src="UntitledQMD_files/figure-html/unnamed-chunk-1-1.png" class="img-fluid figure-img" width="672"></p>
-</figure>
+<div class="cell" title="Packages we need">
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co"># The Packages we need</span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(tidyverse)    <span class="co"># Of course</span></span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(metafor)      <span class="co"># Meta-Analysis stuff</span></span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(metaviz)      <span class="co"># `viz_sunset`</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
-</div>
-<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="fu">par</span>(op)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</div>
+<p>Interpreting the results of a meta-analysis means interpreting graphs. One of the most famous and useful plots is the forest plot, which shows the individual and summary effects.</p>
+<section id="power-enhanced-funnel-plots" class="level2">
+<h2 class="anchored" data-anchor-id="power-enhanced-funnel-plots">Power enhanced funnel plots</h2>
+</section>
+<section id="the-statistics" class="level2">
+<h2 class="anchored" data-anchor-id="the-statistics">The statistics</h2>
+<section id="test-of-excessive-significance" class="level3">
+<h3 class="anchored" data-anchor-id="test-of-excessive-significance">Test of excessive significance</h3>
+</section>
+<section id="r-index" class="level3">
+<h3 class="anchored" data-anchor-id="r-index">R-Index</h3>
+</section>
+</section>
+<section id="conclusion" class="level1">
+<h1>Conclusion</h1>
+</section>
+<section id="references" class="level1">
+<h1>References</h1>
 
 
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
