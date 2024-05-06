@@ -4,7 +4,7 @@ description: "Power-enhanced Funnel plots are awesome, use them!"
 bibliography: blog.bib
 toc: true
 toc-title: Sections
-csl: apa.csl
+#csl: apa.csl
 author:
   - name: Leonhard Reiter
     url: https://leonhardreitr.github.io
@@ -16,7 +16,7 @@ categories: [Quarto, R, Meta-Analysis, Funnel Plots, DataViz] # self-defined cat
 #citation: 
  # url: https://samanthacsik.github.io/posts/2022-10-24-my-blog-post/ 
 #image: preview-image.png
-draft: FALSE # setting this to `true` will prevent your post from appearing on your listing page until you're ready!
+draft: TRUE # setting this to `true` will prevent your post from appearing on your listing page until you're ready!
 editor_options: 
   chunk_output_type: console
 ---
