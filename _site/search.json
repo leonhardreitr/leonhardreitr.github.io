@@ -21,27 +21,6 @@
     "text": "Footnotes\n\n\nWith an “i” not a “y”↩︎"
   },
   {
-    "objectID": "posts/UntitledQMD.html",
-    "href": "posts/UntitledQMD.html",
-    "title": "Off to the Sunset with Funnel Plots?",
-    "section": "",
-    "text": "# The Packages we need\nlibrary(tidyverse)    # Of course\nlibrary(metafor)      # Meta-Analysis stuff\nlibrary(metaviz)      # `viz_sunset`\nInterpreting the results of a meta-analysis means interpreting graphs. One of the most famous and useful plots is the forest plot, which shows the individual and summary effects.\nAnother widely used visualization tool is the funnel plot. In its core basically just a scatter plot, funnel plots\nMainly used to check the model for signs of publication bias, it plots the observed effect sizes against a measure of precision\nHowever, interpreting a standard funnel plot can be challenging. It is often difficult to differentiate between symptoms of publication bias and small-studies effects.\nThe goal of this blog post is to sway you away from standard funnel plots to embracing the sunset funnel plot."
-  },
-  {
-    "objectID": "posts/UntitledQMD.html#power-enhanced-funnel-plots",
-    "href": "posts/UntitledQMD.html#power-enhanced-funnel-plots",
-    "title": "Off to the Sunset with Funnel Plots?",
-    "section": "Power enhanced funnel plots",
-    "text": "Power enhanced funnel plots\nMaking a sunset funnel plot is easy and straight forward. The metaviz package by Kossmeier et al. (2020) provides a straight forward function for it: viz_sunset().\nWhen using metafor (Viechtbauer, 2010) to fit a model, you can then just feed it to viz_sunset().\n\nd &lt;- \nmozart |&gt; \n  escalc(measure = \"SMD\",\n         yi = d,\n         sei = se,\n         data = _)\n\nres &lt;- rma(yi, vi, data = d)\nres\n\n\nRandom-Effects Model (k = 38; tau^2 estimator: REML)\n\ntau^2 (estimated amount of total heterogeneity): 0.1464 (SE = 0.0532)\ntau (square root of estimated tau^2 value):      0.3826\nI^2 (total heterogeneity / total variability):   69.36%\nH^2 (total variability / sampling variability):  3.26\n\nTest for Heterogeneity:\nQ(df = 37) = 108.2824, p-val &lt; .0001\n\nModel Results:\n\nestimate      se    zval    pval   ci.lb   ci.ub      \n  0.3751  0.0792  4.7367  &lt;.0001  0.2199  0.5303  *** \n\n---\nSignif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1\n\nviz_sunset(res,\n           sig_contours = F,\n           contours = T)\n\n\n\n\n\n\n\nviz_funnel(res)"
-  },
-  {
-    "objectID": "posts/UntitledQMD.html#the-statistics",
-    "href": "posts/UntitledQMD.html#the-statistics",
-    "title": "Off to the Sunset with Funnel Plots?",
-    "section": "The statistics",
-    "text": "The statistics\nBeside values for the mean power viz_funnel also provides two estimates:\n\nA test of excessive significance (Ioannidis & Trikalinos, 2007)\nThe R-Index\n\n\nTest of excessive significance\nFirst proposed by Ioannidis & Trikalinos (2007), the test for an excess of significant findings aims to do precisely that, to tell one, if the number of significant results\n\\[\nz_i = \\frac{y_i - \\mbox{H}_0}{\\sqrt{v_i}}\n\\]\n\n\nR-Index"
-  },
-  {
     "objectID": "research/pub.html",
     "href": "research/pub.html",
     "title": "Publications",
@@ -74,20 +53,6 @@
     "href": "posts.html",
     "title": "My Blog",
     "section": "",
-    "text": "Off to the Sunset with Funnel Plots?\n\n\n\nQuarto\n\n\nR\n\n\nMeta-Analysis\n\n\nFunnel Plots\n\n\nDataViz\n\n\n\nPower-enhanced Funnel plots are awesome, use them!\n\n\n\nLeonhard Reiter\n\n\nMay 4, 2024\n\n\n\n\n\n\n\n\nNo matching items"
-  },
-  {
-    "objectID": "posts/UntitledQMD.html#creating-a-sunset-funnel-plot",
-    "href": "posts/UntitledQMD.html#creating-a-sunset-funnel-plot",
-    "title": "Off to the Sunset with Funnel Plots?",
-    "section": "Creating a Sunset Funnel Plot",
-    "text": "Creating a Sunset Funnel Plot\nMaking a sunset funnel plot is easy and straight forward. The metaviz package by Kossmeier et al. (2020) provides a straight forward function for it: viz_sunset().\nWhen using metafor (Viechtbauer, 2010) to fit a model, you can then just feed it to viz_sunset()."
-  },
-  {
-    "objectID": "posts/UntitledQMD.html#further-otuputs",
-    "href": "posts/UntitledQMD.html#further-otuputs",
-    "title": "Off to the Sunset with Funnel Plots?",
-    "section": "Further otuputs",
-    "text": "Further otuputs\nviz_sunset() also provides multiple estimates for the power.\nBeside values for the mean power viz_funnel further provides two estimates:\n\nA test of excessive significance (Ioannidis & Trikalinos, 2007)\nThe R-Index\n\n\nTest of excessive significance\nFirst proposed by Ioannidis & Trikalinos (2007), the test for an excess of significant findings aims to do precisely that, to tell one, if the number of significant results\n\\[\nz_i = \\frac{y_i - \\mbox{H}_0}{\\sqrt{v_i}}\n\\]\n\n\nR-Index"
+    "text": "No matching items"
   }
 ]

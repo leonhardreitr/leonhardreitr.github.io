@@ -6,8 +6,11 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
+<meta name="author" content="Leonhard Reiter">
+<meta name="dcterms.date" content="2024-05-04">
+<meta name="description" content="Power-enhanced Funnel plots are awesome, use them!">
 
-<title>Reiter on the storm</title>
+<title>Reiter on the storm - Off to the Sunset with Funnel Plots?</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -20,7 +23,61 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-</style>
+/* CSS for syntax highlighting */
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+  margin-bottom: 0em;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
 
 
 <script src="../site_libs/quarto-nav/quarto-nav.js"></script>
@@ -70,10 +127,39 @@ ul.task-list li input[type="checkbox"] {
   }
 }</script>
 
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN") {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
 
 </head>
 
-<body class="nav-fixed fullcontent">
+<body class="nav-fixed">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top quarto-banner">
@@ -153,10 +239,75 @@ ul.task-list li input[type="checkbox"] {
     </nav>
 </header>
 <!-- content -->
-<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<header id="title-block-header" class="quarto-title-block default page-columns page-full">
+  <div class="quarto-title-banner page-columns page-full">
+    <div class="quarto-title column-body">
+      <h1 class="title">Off to the Sunset with Funnel Plots?</h1>
+                  <div>
+        <div class="description">
+          Power-enhanced Funnel plots are awesome, use them!
+        </div>
+      </div>
+                          <div class="quarto-categories">
+                <div class="quarto-category">Quarto</div>
+                <div class="quarto-category">R</div>
+                <div class="quarto-category">Meta-Analysis</div>
+                <div class="quarto-category">Funnel Plots</div>
+                <div class="quarto-category">DataViz</div>
+              </div>
+                  </div>
+  </div>
+    
+  <div class="quarto-title-meta-author">
+    <div class="quarto-title-meta-heading">Author</div>
+    <div class="quarto-title-meta-heading">Affiliation</div>
+    
+      <div class="quarto-title-meta-contents">
+      <p class="author"><a href="https://leonhardreitr.github.io">Leonhard Reiter</a> <a href="https://orcid.org/0000-0002-2400-7907" class="quarto-title-author-orcid"> <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA2ZpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYwIDYxLjEzNDc3NywgMjAxMC8wMi8xMi0xNzozMjowMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtcE1NOk9yaWdpbmFsRG9jdW1lbnRJRD0ieG1wLmRpZDo1N0NEMjA4MDI1MjA2ODExOTk0QzkzNTEzRjZEQTg1NyIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDozM0NDOEJGNEZGNTcxMUUxODdBOEVCODg2RjdCQ0QwOSIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDozM0NDOEJGM0ZGNTcxMUUxODdBOEVCODg2RjdCQ0QwOSIgeG1wOkNyZWF0b3JUb29sPSJBZG9iZSBQaG90b3Nob3AgQ1M1IE1hY2ludG9zaCI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOkZDN0YxMTc0MDcyMDY4MTE5NUZFRDc5MUM2MUUwNEREIiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOjU3Q0QyMDgwMjUyMDY4MTE5OTRDOTM1MTNGNkRBODU3Ii8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+84NovQAAAR1JREFUeNpiZEADy85ZJgCpeCB2QJM6AMQLo4yOL0AWZETSqACk1gOxAQN+cAGIA4EGPQBxmJA0nwdpjjQ8xqArmczw5tMHXAaALDgP1QMxAGqzAAPxQACqh4ER6uf5MBlkm0X4EGayMfMw/Pr7Bd2gRBZogMFBrv01hisv5jLsv9nLAPIOMnjy8RDDyYctyAbFM2EJbRQw+aAWw/LzVgx7b+cwCHKqMhjJFCBLOzAR6+lXX84xnHjYyqAo5IUizkRCwIENQQckGSDGY4TVgAPEaraQr2a4/24bSuoExcJCfAEJihXkWDj3ZAKy9EJGaEo8T0QSxkjSwORsCAuDQCD+QILmD1A9kECEZgxDaEZhICIzGcIyEyOl2RkgwAAhkmC+eAm0TAAAAABJRU5ErkJggg=="></a></p>
+    </div>
+    <div class="quarto-title-meta-contents">
+          <p class="affiliation">
+              <a href="https://social-econ-psych.univie.ac.at">
+              Department of Occupational, Economic, and Social Psychology, Faculty of Psychology, University of Vienna
+              </a>
+            </p>
+        </div>
+    </div>
+
+  <div class="quarto-title-meta">
+
+        
+      <div>
+      <div class="quarto-title-meta-heading">Published</div>
+      <div class="quarto-title-meta-contents">
+        <p class="date">May 4, 2024</p>
+      </div>
+    </div>
+    
+      
+    </div>
+    
+  
+  </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Sections</h2>
+   
+  <ul>
+  <li><a href="#enhancing-funnel-plots" id="toc-enhancing-funnel-plots" class="nav-link active" data-scroll-target="#enhancing-funnel-plots">Enhancing Funnel plots</a></li>
+  <li><a href="#creating-a-sunset-funnel-plot" id="toc-creating-a-sunset-funnel-plot" class="nav-link" data-scroll-target="#creating-a-sunset-funnel-plot">Creating a Sunset Funnel Plot</a></li>
+  <li><a href="#further-otuputs" id="toc-further-otuputs" class="nav-link" data-scroll-target="#further-otuputs">Further otuputs</a>
+  <ul class="collapse">
+  <li><a href="#test-of-excessive-significance" id="toc-test-of-excessive-significance" class="nav-link" data-scroll-target="#test-of-excessive-significance">Test of excessive significance</a></li>
+  <li><a href="#r-index" id="toc-r-index" class="nav-link" data-scroll-target="#r-index">R-Index</a></li>
+  </ul></li>
+  <li><a href="#conclusion" id="toc-conclusion" class="nav-link" data-scroll-target="#conclusion">Conclusion</a></li>
+  <li><a href="#references" id="toc-references" class="nav-link" data-scroll-target="#references">References</a></li>
+  </ul>
+</nav>
+    </div>
 <!-- main -->
 <main class="content quarto-banner-title-block" id="quarto-document-content">
 
@@ -164,9 +315,65 @@ ul.task-list li input[type="checkbox"] {
 
 
 
+<div class="cell" title="Packages we need">
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co"># The Packages we need</span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(tidyverse)    <span class="co"># Of course</span></span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(metafor)      <span class="co"># Meta-Analysis stuff</span></span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(metaviz)      <span class="co"># `viz_sunset`</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p>Interpreting the results of a meta-analysis means interpreting graphs. One of the most famous and useful plots is the forest plot, which shows the individual and summary effects.</p>
+<p>Another widely used visualization tool is the funnel plot. In its core basically just a scatter plot, funnel plots</p>
+<p>Mainly used to check the model for signs of publication bias, it plots the observed effect sizes against a measure of precision</p>
+<p>However, interpreting a standard funnel plot can be challenging. It is often difficult to differentiate between symptoms of publication bias and small-studies effects.</p>
+<p>The goal of this blog post is to sway you away from standard funnel plots to embracing the sunset funnel plot.</p>
+<section id="enhancing-funnel-plots" class="level3">
+<h3 class="anchored" data-anchor-id="enhancing-funnel-plots">Enhancing Funnel plots</h3>
+</section>
+<section id="creating-a-sunset-funnel-plot" class="level2">
+<h2 class="anchored" data-anchor-id="creating-a-sunset-funnel-plot">Creating a Sunset Funnel Plot</h2>
+<p>Making a sunset funnel plot is easy and straight forward. The <code>metaviz</code> package by <span class="citation" data-cites="Kossmeier2020">Kossmeier et al. (<a href="#ref-Kossmeier2020" role="doc-biblioref">2020</a>)</span> provides a straight forward function for it: <code>viz_sunset()</code>.</p>
+<p>When using <code>metafor</code> <span class="citation" data-cites="metafor">(<a href="#ref-metafor" role="doc-biblioref">Viechtbauer, 2010</a>)</span> to fit a model, you can then just feed it to <code>viz_sunset()</code>.</p>
+</section>
+<section id="further-otuputs" class="level2">
+<h2 class="anchored" data-anchor-id="further-otuputs">Further otuputs</h2>
+<p><code>viz_sunset()</code> also provides multiple estimates for the power.</p>
+<p>Beside values for the mean power <code>viz_funnel</code> further provides two estimates:</p>
+<ul>
+<li><p>A test of excessive significance <span class="citation" data-cites="tes">(<a href="#ref-tes" role="doc-biblioref">Ioannidis &amp; Trikalinos, 2007</a>)</span></p></li>
+<li><p>The R-Index</p></li>
+</ul>
+<section id="test-of-excessive-significance" class="level3">
+<h3 class="anchored" data-anchor-id="test-of-excessive-significance">Test of excessive significance</h3>
+<p>First proposed by <span class="citation" data-cites="tes">Ioannidis &amp; Trikalinos (<a href="#ref-tes" role="doc-biblioref">2007</a>)</span>, the test for an excess of significant findings aims to do precisely that, to tell one, if the number of significant results</p>
+<p><span class="math display">\[
+z_i = \frac{y_i - \mbox{H}_0}{\sqrt{v_i}}
+\]</span></p>
+</section>
+<section id="r-index" class="level3">
+<h3 class="anchored" data-anchor-id="r-index">R-Index</h3>
+</section>
+</section>
+<section id="conclusion" class="level1">
+<h1>Conclusion</h1>
+</section>
+<section id="references" class="level1">
 
 
-</main> <!-- /main -->
+
+
+</section>
+
+<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" role="doc-bibliography" id="quarto-bibliography"><h2 class="anchored quarto-appendix-heading">References</h2><div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" data-line-spacing="2" role="list">
+<div id="ref-tes" class="csl-entry" role="listitem">
+Ioannidis, J. P., &amp; Trikalinos, T. A. (2007). An exploratory test for an excess of significant findings. <em>Clinical Trials</em>, <em>4</em>(3), 245–253. <a href="https://doi.org/10.1177/1740774507079441">https://doi.org/10.1177/1740774507079441</a>
+</div>
+<div id="ref-Kossmeier2020" class="csl-entry" role="listitem">
+Kossmeier, M., Tran, U. S., &amp; Voracek, M. (2020). Power-enhanced funnel plots for meta-analysis: The sunset funnel plot. <em>Zeitschrift Für Psychologie</em>, <em>228</em>(1), 43–49. <a href="https://doi.org/10.1027/2151-2604/a000392">https://doi.org/10.1027/2151-2604/a000392</a>
+</div>
+<div id="ref-metafor" class="csl-entry" role="listitem">
+Viechtbauer, W. (2010). Conducting meta-analyses in <span>R</span> with the <span class="nocase">metafor</span> package. <em>Journal of Statistical Software</em>, <em>36</em>(3), 1–48. <a href="https://doi.org/10.18637/jss.v036.i03">https://doi.org/10.18637/jss.v036.i03</a>
+</div>
+</div></section></div></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {
