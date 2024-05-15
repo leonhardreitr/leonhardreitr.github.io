@@ -28,7 +28,7 @@ statistics. Check my Github to see what I am currently working through.
 
 Sometime I also dabble into Bayesian barbarism, participating in the
 2024 edition of Richard McElreath's "Statistical Rethinking"-Course.
-More broadly I am interested in meta-analyses7mixed-effects models,
+More broadly I am interested in meta-analyses, mixed-effects models,
 Machine Learning and text as data. I strongly advocate open-science and
 especially reproducible workflows. Check out my OSF to see more.
 
