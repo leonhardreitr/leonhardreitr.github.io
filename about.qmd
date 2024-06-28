@@ -6,11 +6,10 @@ editor:
 ---
 
 My name is Leonhard Reiter, but most people just call me Lenni[^1]. I am
-a Master Student in (Economic) Psychology at the university of Vienna
-and a student assistant in Robert Böhm's Team. There I help with
-conducting research, such as creating surveys and analyzing data. I am
-expected to finish my studies in June 2024 and am actively looking for
-Phd-positions :).
+a Phd Student in (Economic) Psychology at the university of Vienna
+
+Before I studied Psychology (M.Sc) and was a student assistant in Robert Böhm's Team. There I helped with
+conducting research, such as creating surveys and analyzing data.
 
 [^1]: With an "i" not a "y"
 

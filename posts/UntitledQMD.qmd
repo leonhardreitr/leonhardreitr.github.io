@@ -1,0 +1,66 @@
+---
+title: "A Pun about Forests"
+description: "In this blog post I want to write about a somewhat newer technique in the context of meta-analyses `Metaforest`. Developed by Caspar van Lissa CITE, the goal of it is
+to explore between-study heterogeneity by identifiying possibe moderators.
+It does so by using the random forest algorithm, which is non-parametic and thus useful in samll-sample situations."
+bibliography: blog.bib
+toc: true
+toc-title: Sections
+#csl: apa.csl
+author:
+  - name: Leonhard Reiter
+    url: https://leonhardreitr.github.io
+    orcid: 0000-0002-2400-7907
+    affiliation: Department of Occupational, Economic, and Social Psychology, Faculty of Psychology, University of Vienna
+    affiliation-url: https://social-econ-psych.univie.ac.at
+date: 05-20-2024
+categories: [Random Forest, R, Meta-Analysis, Machine Learning, Heterogeneity] # self-defined categories
+#citation: 
+ # url: https://samanthacsik.github.io/posts/2022-10-24-my-blog-post/ 
+#image: preview-image.png
+draft: TRUE # setting this to `true` will prevent your post from appearing on your listing page until you're ready!
+editor_options: 
+  chunk_output_type: console
+---
+A lot of ink has been spilled about how to deal with between-study heterogeneity ($\zeta$) in meta-analyses. Depending on your underlying model - e.g. Equal or Random Effects - different ways of thought exist. Most commonly researchers employ meta-regression (aka subgroup-analysis) to test potential,
+a-priori defined moderators CITE LISSA 2018. However, one would need to know explicitly know what influences $\zeta$. Furhter most meta-analyses simply lack the power to reliably detect such effects. Although meta-analyses often claim to have large samples, meaning the samples of the inlcuded studies, the level of analysis is on study level. Thus the total sample of all included studies can be huge, even though the actual sample used in meta-regression is small.
+As such meta-analyses have a small-sample problem. So many potential moderators and only a small sample, sounds like the course of dimonensality to me.
+
+# Trees
+
+Using only a single tree can have severe limitations. 
+
+# The code
+We will used data from the 'metafor' package.
+
+```{r}
+library(tidyverse) # all things nice
+library(metafor) # data and rma()
+library(metaforest) # forest
+library(metaviz) # plots
+
+d <- dat.white2020 |>
+  # calc effect sizes
+  escalc(
+    measure = "ZCOR",
+    ri = r,
+    ni = n,
+    data = _
+  )
+```
+
+We will first fit a three-level model:
+
+```{r}
+mod <- rma.mv(
+  yi,
+  vi,
+  random = list(~ 1 | study_id, ~ 1 | obs),
+  data = d
+  )
+
+summary(mod)
+```
+
+Now it is time for `metaforest`
+
