@@ -5,7 +5,7 @@ editor:
     wrap: 72
 ---
 
-My name is Leonhard Reiter, but most people just call me Lenni[^1]. I will start as a Marketing Phd Student in Christoph Fuchs team at the university of Vienna.
+My name is Leonhard Reiter, but most people just call me Lenni[^1]. This fall I will start as a Marketing Phd Student in Christoph Fuchs team at the university of Vienna.
 
 Before that I studied Psychology at the university of Vienna (M.Sc) and was a student assistant in Robert Böhm's Team. There I helped with
 conducting research, such as creating surveys and analyzing data.
