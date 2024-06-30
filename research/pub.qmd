@@ -8,7 +8,7 @@ listing:
     sort: "date desc"
     sort-ui: false
 toc: true
-date-format: "D MMM YYYY"
+date-format: "YYYY"
 ---
 
 ## Journal articles
