@@ -17,7 +17,7 @@ prepared a Bachelor course on Publication Bias detection methods such as
 p/z-curves regarding management research.
 
 I am interested in how people engage, rate and interact with new
-technologies, ranging from vaccination to AI tool. Furthermore I am also
+technologies, ranging from algorithms to vaccines. Furthermore I am also
 interested in more meta-sciency topics such as p-mining, publication
 bias and how to help to improve science.
 
