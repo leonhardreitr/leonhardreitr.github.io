@@ -35,8 +35,8 @@ More broadly I am interested in meta-analyses, mixed-effects models,
 Machine Learning and text as data. I strongly advocate open-science and
 especially reproducible workflows. Check out my OSF to see more.
 
-Beside science I am an avid martial artis (Purple Belt in BJJ), like to
-cook, play Bass and take long walks in the
+Beside science I am an avid martial artist (Purple Belt in Brazilian
+Jiu-Jitsu), like to cook, play Bass and take long walks in the
 [Augarten](https://de.wikivoyage.org/wiki/Wien/Leopoldstadt/Augarten#/media/Datei:Augarten_Flakturm.jpg).
 
 If you would like to talk about statistics, science in general or to
