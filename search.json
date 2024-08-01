@@ -1,24 +1,17 @@
 [
   {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "\nHello :)\n",
+    "objectID": "cv.html",
+    "href": "cv.html",
+    "title": "Curriculum vitae",
     "section": "",
-    "text": "Welcome to my Website 🤓"
+    "text": "Download current CV"
   },
   {
-    "objectID": "about.html",
-    "href": "about.html",
-    "title": "About me",
+    "objectID": "posts.html",
+    "href": "posts.html",
+    "title": "My Blog",
     "section": "",
-    "text": "My name is Leonhard Reiter, but most people just call me Lenni1. This fall I will start as a Marketing Phd Student in Christoph Fuchs team at the university of Vienna.\nBefore that I studied Psychology at the university of Vienna (M.Sc) and was a student assistant in Robert Böhm’s Team. There I helped with conducting research, such as creating surveys and analyzing data.\nI did an internship at Susann Fiedler’s group at the WU Vienna where I prepared a Bachelor course on Publication Bias detection methods such as p/z-curves regarding management research.\nI am interested in how people engage, rate and interact with new technologies, ranging from algorithms to vaccines. Furthermore I am also interested in more meta-sciency topics such as p-mining, publication bias and how to help to improve science. My research was featured in popular media such as the Forbes magazine\nMy work is strongly quantitative and I love doing and reading about statistics. Check my Github to see what I am currently working through.\nSometime I also dabble into Bayesian barbarism, participating in the 2024 edition of Richard McElreath’s “Statistical Rethinking”-Course. More broadly I am interested in meta-analyses, mixed-effects models, Machine Learning and text as data. I strongly advocate open-science and especially reproducible workflows. Check out my OSF to see more.\nBeside science I am an avid martial artist (Purple Belt in Brazilian Jiu-Jitsu), like to cook, play Bass and take long walks in the Augarten.\nIf you would like to talk about statistics, science in general or to collaborate on a project, feel free to reach out to me via mail."
-  },
-  {
-    "objectID": "about.html#footnotes",
-    "href": "about.html#footnotes",
-    "title": "About me",
-    "section": "Footnotes",
-    "text": "Footnotes\n\n\nWith an “i” not a “y”↩︎"
+    "text": "No matching items"
   },
   {
     "objectID": "research/pub.html",
@@ -42,17 +35,24 @@
     "text": "Work in progress\n\nI am currently working on a meta-analysis on a topic related to vaccination intention. My first article as first author is also currently under review. The topic is broadly use cases of generative AI in education."
   },
   {
-    "objectID": "cv.html",
-    "href": "cv.html",
-    "title": "Curriculum vitae",
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About me",
     "section": "",
-    "text": "Download current CV"
+    "text": "My name is Leonhard Reiter, but most people just call me Lenni1. I am doing my PhD in Marketing Christoph Fuchs team at the university of Vienna.\nBefore that I studied Psychology at the university of Vienna (M.Sc) and was a student assistant in Robert Böhm’s Team. There I helped with conducting research, such as creating surveys and analyzing data.\nI did an internship at Susann Fiedler’s group at the WU Vienna where I prepared a Bachelor course on Publication Bias detection methods such as p/z-curves regarding management research.\nI am interested in how people engage, rate and interact with new technologies, ranging from algorithms to vaccines. Furthermore I am also interested in more meta-sciency topics such as p-mining, publication bias and how to help to improve science. My research was featured in popular media such as the Forbes magazine\nMy work is strongly quantitative and I love doing and reading about statistics. Check my Github to see what I am currently working through.\nSometime I also dabble into Bayesian barbarism, participating in the 2024 edition of Richard McElreath’s “Statistical Rethinking”-Course. More broadly I am interested in meta-analyses, mixed-effects models, Machine Learning and text as data. I strongly advocate open-science and especially reproducible workflows. Check out my OSF to see more.\nBeside science I am an avid martial artist (Purple Belt in Brazilian Jiu-Jitsu), like to cook, play Bass and take long walks in the Augarten.\nIf you would like to talk about statistics, science in general or to collaborate on a project, feel free to reach out to me via mail."
   },
   {
-    "objectID": "posts.html",
-    "href": "posts.html",
-    "title": "My Blog",
+    "objectID": "about.html#footnotes",
+    "href": "about.html#footnotes",
+    "title": "About me",
+    "section": "Footnotes",
+    "text": "Footnotes\n\n\nWith an “i” not a “y”↩︎"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "\nHello :)\n",
     "section": "",
-    "text": "No matching items"
+    "text": "Welcome to my Website 🤓"
   }
 ]
