@@ -1,0 +1,60 @@
+/*-- scss:defaults --*/
+// Import fonts
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;800&display=swap');
+
+// Colors
+$nicewhite: #EDE8F5; // Off-white with a metallic hint
+$pink: #3D52A0; // Metallic pink for headings
+$black: #1c1c1c; // Dark metallic black
+$blue: #7091E6; // Metallic blue
+$green: #3D52A0; // Deep metallic green
+$dark-green: #6b7b57; // Dark metallic green
+$light-green: #c9d4c3; // Light metallic green
+$cream: #f4f4f4; // Metallic cream
+$gray: #5a5a5a; // Dark metallic gray
+$purple: #7d3a8a; // Deep metallic purple
+$orange: #b36b35; // Metallic orange
+
+// Base document colors
+$navbar-bg: $green; // navbar background
+$navbar-fg: $nicewhite; // navbar foreground elements
+$navbar-hl: $cream; // highlight color when hovering over navbar links
+$body-bg: $nicewhite; // page background 
+$body-color: $black; // page text 
+$footer-bg: $cream; // footer background
+$link-color: $blue; // hyperlinks
+
+
+// Inline code
+$code-bg: $nicewhite; // inline code background color
+$code-color: $purple; // inline code text color
+
+// Code blocks
+$code-block-bg: $nicewhite; // code block background color
+
+// font
+$font-family-base: 'Poppins', sans-serif; // Updated to Poppins
+
+// Extended styles
+// Typography
+$paragraph-spacing: 1.2em; // Spacing between paragraphs
+
+// Buttons
+$button-bg: #f2a900; // Button background color
+$button-color: #ffffff; // Button text color
+$button-border-radius: 4px; // Button border radius
+
+// Navigation Bar
+$navbar-height: 50px; // Navigation bar height
+$navbar-link-color: #ffffff; // Navigation link color
+$navbar-link-hover-color: #f2a900; // Navigation link hover color
+
+// Footer
+$footer-bg: #333333; // Footer background color
+$footer-color: #ffffff; // Footer text color
+
+/*-- scss:rules --*/
+
+h1, h2, h3 {
+  color: $pink;
+}
