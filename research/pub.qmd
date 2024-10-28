@@ -11,7 +11,7 @@ toc: true
 date-format: "YYYY"
 ---
 
-## Journal articles
+## Papers
 
 ::: {#journal-article}
 :::
