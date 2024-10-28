@@ -36,8 +36,23 @@ Maymin and Langer (2021)"
     - "<b>Leonhard Reiter</b>"
     - "Ulrich Tran*"
   journal: "Mindfulness"
-  date: 2024-11-16
+  date: 2024-9-16
   year: 2024
   pubopen: ""
   osf: ""
+  socialmedia: ""
+  
+
+- title: "Echoes of Dissent: Sentiment Analysis of Messages in German/Austrian Telegram Groups Against COVID-19 Measures"
+  format: "Research Article (Preprint)"
+  author:
+    - "Deliah Wagner*"
+    - "<b>Leonhard Reiter</b>"
+    - "Stephan Lechner"
+    - "Julia Reiter*"
+  journal: "Mindfulness"
+  date: 2024-10-28
+  year: 2024
+  pubopen: https://osf.io/preprints/psyarxiv/h6n2m
+  osf: https://osf.io/7da5x/
   socialmedia: ""
