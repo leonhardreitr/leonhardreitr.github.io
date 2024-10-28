@@ -21,7 +21,7 @@
     - "Christoph Fuchs"
     - "Robert Böhm"
   journal: "International Journal of Human–Computer Interaction"
-  date: 2024-11-15
+  date: 2024-1-15
   year: 2024
   pubopen: ""
   osf: ""
@@ -42,6 +42,19 @@ Maymin and Langer (2021)"
   osf: ""
   socialmedia: ""
   
+- title: "Emphasizing herd immunity in vaccine advocacy: A systematic review and three-level meta-analysis"
+  format: "Research Article (Preprint)"
+  author:
+    - "<b>Leonhard Reiter*</b>"
+    - "Martin Voracek"
+    - "Cornelia Betsch"
+    - "Robert Böhm"
+  journal: "PsyArXiv"
+  date: 2024-10-27
+  year: 2024
+  pubopen: https://osf.io/preprints/psyarxiv/esk7h
+  osf: https://osf.io/zm9at/
+  socialmedia: https://x.com/leonhard_reiter/status/1850913341893456100
 
 - title: "Echoes of Dissent: Sentiment Analysis of Messages in German/Austrian Telegram Groups Against COVID-19 Measures"
   format: "Research Article (Preprint)"
@@ -50,7 +63,7 @@ Maymin and Langer (2021)"
     - "<b>Leonhard Reiter</b>"
     - "Stephan Lechner"
     - "Julia Reiter*"
-  journal: " "
+  journal: "PsyArXiv"
   date: 2024-10-28
   year: 2024
   pubopen: https://osf.io/preprints/psyarxiv/h6n2m
