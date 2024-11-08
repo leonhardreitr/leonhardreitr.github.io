@@ -3,7 +3,7 @@ project:
 
 website:
   title: "Reiter on the storm"
-  image: img3.jpg
+  image: img1.jpg
   navbar:
     tools:
     right:
