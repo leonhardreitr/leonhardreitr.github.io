@@ -1,6 +1,6 @@
 ---
 title: <p class="orange-text">Hello :)</p>
-image: img.jpg
+image: img1.jpg
 about:
   template: jolla
   image-width: 20em
