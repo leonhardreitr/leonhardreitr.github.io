@@ -1,23 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://leonhardreitr.github.io/index.html</loc>
-    <lastmod>2025-02-09T15:11:28.895Z</lastmod>
-  </url>
-  <url>
-    <loc>https://leonhardreitr.github.io/posts.html</loc>
-    <lastmod>2025-02-09T15:11:28.895Z</lastmod>
-  </url>
-  <url>
-    <loc>https://leonhardreitr.github.io/about.html</loc>
-    <lastmod>2025-02-09T15:11:28.887Z</lastmod>
-  </url>
-  <url>
     <loc>https://leonhardreitr.github.io/cv.html</loc>
-    <lastmod>2025-02-09T15:11:28.887Z</lastmod>
+    <lastmod>2025-02-18T11:18:16.866Z</lastmod>
   </url>
   <url>
     <loc>https://leonhardreitr.github.io/research/pub.html</loc>
-    <lastmod>2025-02-09T15:11:28.895Z</lastmod>
+    <lastmod>2025-02-18T11:18:16.875Z</lastmod>
+  </url>
+  <url>
+    <loc>https://leonhardreitr.github.io/about.html</loc>
+    <lastmod>2025-02-18T11:18:16.866Z</lastmod>
+  </url>
+  <url>
+    <loc>https://leonhardreitr.github.io/posts.html</loc>
+    <lastmod>2025-02-18T11:18:16.874Z</lastmod>
+  </url>
+  <url>
+    <loc>https://leonhardreitr.github.io/index.html</loc>
+    <lastmod>2025-02-18T11:18:16.874Z</lastmod>
   </url>
 </urlset>
